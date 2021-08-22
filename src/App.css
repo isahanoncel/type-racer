@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Arima Madurai', cursive;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #95a5a6;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.main-window{
+  background-color: #f1f1f1;
+  width: 1050px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-window-top-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.word-point{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.word-point svg{
+  width: 30px;
+  height: 30px;
+  filter: brightness(1);
+  margin-left: 6px;
+  margin-bottom: 5px;
+}
+
+.input-area{
+  width: 100%;
+  margin-top: 15px;
+}
+
+input[type='text']{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 2px;
+}
+
+.words ul li{
+  display: inline;
+  font-size: 32px;
+  margin: 0 12px;
+  opacity: .3;
+}
+
+.words ul li:first-child{
+  font-size: 42px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.score-area{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: .5px solid #080808;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
 }
